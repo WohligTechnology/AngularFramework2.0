@@ -1,7 +1,7 @@
 
 var lat = 0;
 var long = 0;
-var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute']);
+var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'restservicemod', 'ngRoute', 'infinite-scroll']);
 
 phonecatControllers.controller('home',
     function ($scope, TemplateService, NavigationService, RestService, $filter) {
