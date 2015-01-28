@@ -1,0 +1,8 @@
+<div class="loginform text-center">
+    <h3>Register</h3>
+    <p>or <a href="#/login">Login</a></p>
+    {{demo}}
+    <center><p><input type="email" class="form-control signup" placeholder="Email" ng-model="login.email" ng-class="allvalidation[0].validation" required></p>
+    <p><input type="password" class="form-control signup" placeholder="Password"  ng-model="login.password" ng-class="allvalidation[1].validation" required></p>
+    <p><button class="btn btn-success" ng-click="signupfunc(login)">Sign Up</button></p>
+</div>

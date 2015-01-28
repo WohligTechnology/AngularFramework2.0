@@ -5,45 +5,45 @@ var navigationservice = angular.module('navigationservice', [])
             name: "Home",
             classis: "active",
             link: "#/home",
-//            onsession: "0",
+            onsession: "0",
             subnav: []
     }, {
             name: "Create Events",
             active: "",
             link: "#/createevents",
-//            onsession: "1",
+            onsession: "1",
             subnav: []
     }, {
             name: "My Events",
             classis: "",
             link: "#/myevents",
-//            onsession: "1",
+            onsession: "0",
             subnav: []
     }, /*{
             name: "Sponsor Events",
             classis: "",
             link: "#/sponsor",
-            onsession: "1",
+//            onsession: "0",
             subnav: []
     },*/ {
             name: "My Profile",
             classis: "",
             link: "#/myprofile",
-//            onsession: "1",
+            onsession: "0",
             subnav: []
     },
         {
             name: "My Tickets",
             classis: "",
             link: "#/mytickets",
-            onsession: "1",
+            onsession: "0",
             subnav: []
      },
         {
             name: "My Contacts",
             classis: "",
             link: "#/mycontacts",
-//            onsession: "1",
+            onsession: "0",
             subnav: []
     }];
 
