@@ -1,0 +1,140 @@
+<div class="slider">
+    <div class="container2 slides">
+        <div id="carousel-eglapp" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-eglapp" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-eglapp" data-slide-to="1" class=""></li>
+                <li data-target="#carousel-eglapp" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img alt="First slide" src="lib/images/banner.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img alt="Second slide" src="lib/images/banner1.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+
+            </div>
+            <a class="right carousel-control" href="#carousel-eglapp" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <a class="left carousel-control" href="#carousel-eglapp" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--<h3>{{facebook.name}}</h3>
+<h5>{{facebook.id}}</h5>
+<img src="{{facebook.picture.data.url}}"/>-->
+
+<div class="container2 content2">
+    <div class="contnt-top">
+        <button style="margin-top:15px;" class="btn pull-right">
+            <h4>Buy Tickets Now</h4>
+        </button>
+        <h3>Wohlig - AngularFramework 2.0 , - 27 Jan 2015.</h3>
+        <h4>Website Hightlights. </h4>
+    </div>
+
+    <div class="contnt-top">
+
+        <input type="search" class="black" ng-model="search" ng-click="showcategory()" ng-change="changesearch(search)" placeholder="All Events">
+        <!--select class="category black" style="margin-top: 4px; margin-left: -7px;" ng-click="categoryclick(val.id)">
+            <option ng-repeat="val in cat">{{val.name}}</option>
+        </select-->
+        <div class="btn-group right">
+        </div>
+        <div class="btn-group pull-right">
+            <button type="button" class="btn btn-info">Groups</button>
+            <!--button type="button" class="btn btn-info">Calendar</button-->
+            <input type="date" class="btn btn-info" value="Calendar" ng-model="date" ng-change="calendar(date)" style="height: 34px;margin-top: 0px;" />
+        </div>
+
+    </div>
+
+    <style>
+        html,
+        body,
+        #map-canvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+    </style>
+    <div id="map-canvas"></div>
+
+
+    <div class="featured-event">
+        <h3>Listing</h3>
+
+        <div class="row pad">
+            <div class="col-xs-3 text-center">
+                <div class="evnt">
+                    <a href="#">
+                        <img src="lib/images/noimage.gif" height="200px" width="200px">
+                        <h4>My Title</h4>
+                        <p>Other Text</p>
+                    </a>
+                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
+                </div>
+            </div>
+            <div class="col-xs-3 text-center">
+                <div class="evnt">
+                    <a href="#">
+                        <img src="lib/images/noimage.gif" height="200px" width="200px">
+                        <h4>My Title</h4>
+                        <p>Other Text</p>
+                    </a>
+                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
+                </div>
+            </div>
+            <div class="col-xs-3 text-center">
+                <div class="evnt">
+                    <a href="#">
+                        <img src="lib/images/noimage.gif" height="200px" width="200px">
+                        <h4>My Title</h4>
+                        <p>Other Text</p>
+                    </a>
+                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
+                </div>
+            </div>
+            <div class="col-xs-3 text-center">
+                <div class="evnt">
+                    <a href="#">
+                        <img src="lib/images/noimage.gif" height="200px" width="200px">
+                        <h4>My Title</h4>
+                        <p>Other Text</p>
+                    </a>
+                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
+                </div>
+            </div>
+            <div class="col-xs-3 text-center">
+                <div class="evnt">
+                    <a href="#">
+                        <img src="lib/images/noimage.gif" height="200px" width="200px">
+                        <h4>My Title</h4>
+                        <p>Other Text</p>
+                    </a>
+                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
+                </div>
+            </div>
+            <div class="col-xs-3 text-center">
+                <div class="evnt">
+                    <a href="#">
+                        <img src="lib/images/noimage.gif" height="200px" width="200px">
+                        <h4>My Title</h4>
+                        <p>Other Text</p>
+                    </a>
+                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
+                </div>
+            </div>
+        </div>
+
+    </div>
