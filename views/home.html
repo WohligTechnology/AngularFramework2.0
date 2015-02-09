@@ -1,4 +1,5 @@
-<div class="slider">
+<!--<div class="slide-animate" ng-view></div>-->
+   <div class="animate-hide" ng-hide="showw">
     <div class="container2 slides">
         <div id="carousel-eglapp" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -39,7 +40,7 @@
         <button style="margin-top:15px;" class="btn pull-right">
             <h4>Buy Tickets Now</h4>
         </button>
-        <h3>Wohlig - AngularFramework 2.0 , - 27 Jan 2015.</h3>
+        <h3 class="scale-fade-in">Wohlig - AngularFramework 2.0 , - 27 Jan 2015.</h3>
         <h4>Website Hightlights. </h4>
     </div>
 
@@ -70,71 +71,20 @@
     </style>
     <div id="map-canvas"></div>
 
-
     <div class="featured-event">
         <h3>Listing</h3>
-        <div infinite-scroll="myPagingFunction()" infinite-scroll-distance="3"></div>
+        <div infinite-scroll="myPagingFunction()" infinite-scroll-distance="100"></div>
         <div class="row pad">
-            <div class="col-xs-3 text-center">
+            <div class="col-xs-3 text-center  scale-fade-in" ng-repeat="li in list">
                 <div class="evnt">
                     <a href="#">
                         <img src="lib/images/noimage.gif" height="200px" width="200px">
-                        <h4>My Title</h4>
-                        <p>Other Text</p>
-                    </a>
-                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
-                </div>
-            </div>
-            <div class="col-xs-3 text-center">
-                <div class="evnt">
-                    <a href="#">
-                        <img src="lib/images/noimage.gif" height="200px" width="200px">
-                        <h4>My Title</h4>
-                        <p>Other Text</p>
-                    </a>
-                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
-                </div>
-            </div>
-            <div class="col-xs-3 text-center">
-                <div class="evnt">
-                    <a href="#">
-                        <img src="lib/images/noimage.gif" height="200px" width="200px">
-                        <h4>My Title</h4>
-                        <p>Other Text</p>
-                    </a>
-                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
-                </div>
-            </div>
-            <div class="col-xs-3 text-center">
-                <div class="evnt">
-                    <a href="#">
-                        <img src="lib/images/noimage.gif" height="200px" width="200px">
-                        <h4>My Title</h4>
-                        <p>Other Text</p>
-                    </a>
-                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
-                </div>
-            </div>
-            <div class="col-xs-3 text-center">
-                <div class="evnt">
-                    <a href="#">
-                        <img src="lib/images/noimage.gif" height="200px" width="200px">
-                        <h4>My Title</h4>
-                        <p>Other Text</p>
-                    </a>
-                    <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
-                </div>
-            </div>
-            <div class="col-xs-3 text-center">
-                <div class="evnt">
-                    <a href="#">
-                        <img src="lib/images/noimage.gif" height="200px" width="200px">
-                        <h4>My Title</h4>
-                        <p>Other Text</p>
+                        <h4>{{li.title}}</h4>
                     </a>
                     <!--p><a class="btn btn-info" ng-show="{{status}}==4">Sponsor Event</a></p-->
                 </div>
             </div>
         </div>
 
+    </div>
     </div>
