@@ -64,6 +64,7 @@ phonecatControllers.controller('login',
         $scope.pageClass = "page-login";
     
         $scope.loginfunc = function (login) {
+            console.log("in login");
             toaster.pop("error", "Login Error", "Invalid username or password", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
@@ -79,6 +80,7 @@ phonecatControllers.controller('signup',
     
         
         $scope.signupfunc = function (login){
+            console.log("toaster");
             toaster.pop("error", "Signup Error", "Already Exist. Choose Another Email Address", 5000);
             toaster.pop("success", "Welcome", "Registered successfully", 5000);
         }
