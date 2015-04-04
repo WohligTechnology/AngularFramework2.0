@@ -3,17 +3,20 @@
 
 <head ng-controller="headerctrl">
 
-<!--    <title ng-bind="'Eglapp - '+template.title">Eglapp</title>-->
+    <!--    <title ng-bind="'Eglapp - '+template.title">Eglapp</title>-->
     <title ng-bind="'AngularFramework - '">2.0</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="lib/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
-<!--    <link rel="stylesheet" type="text/css" href="lib/css/animate.css" />-->
+    <!--    <link rel="stylesheet" type="text/css" href="lib/css/animate.css" />-->
     <link rel="stylesheet" type="text/css" href="lib/css/main.css" />
     <link rel="stylesheet" type="text/css" href="lib/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/angularjs-toaster/toaster.css" />
-   
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-isotope/demo/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-isotope/demo/styles/main.css" />
+
+
     <!-- CSS adjustments for browsers with JavaScript disabled -->
 
     <script type="text/javascript">
@@ -24,15 +27,19 @@
 
 
 
-
-
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular-isotope/demo/scripts/vendor/jquery.isotope.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
-<!--    <script src="bower_components/angular-animate/angular-animate.min.js"></script>-->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-animate.js"></script>
+    <script src="bower_components/angular-masonry/angular-masonry.js"></script>
+    <!--   <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/2.1.08/jquery.masonry.min.js"></script>-->
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+
+    <script src="bower_components/angular-isotope/dist/angular-isotope.min.js"></script>
+
+    <!--    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-animate.js"></script>-->
     <script src="bower_components/angularjs-toaster/toaster.js"></script>
-<!--    <script src="bower_components/parallax/deploy/jquery.parallax.min.js"></script>-->
-<!--    <script src="bower_components/parallax/deploy/parallax.min.js"></script>-->
+    <!--    <script src="bower_components/parallax/deploy/jquery.parallax.min.js"></script>-->
+    <!--    <script src="bower_components/parallax/deploy/parallax.min.js"></script>-->
     <!--<script src="lib/js/angular-animate.js"></script>-->
     <script src="lib/js/angular-route.min.js"></script>
     <!--<script src="lib/js/angular-resource.min.js"></script>-->
@@ -46,9 +53,9 @@
     <script src="js/navigation.js"></script>
 
     <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-    <script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
+    <!--    <script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>-->
     <script type="text/javascript" src="bower_components/angular-ui-map/ui-map.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+<!--    <script src="https://maps.googleapis.com/maps/api/js"></script>-->
 
     <script src="bower_components/angular-ui-utils/ui-utils.min.js"></script>
 
@@ -56,16 +63,15 @@
 
     <script src="js/app.js"></script>
     <style>
-        
     </style>
 
 </head>
 
 <body>
-<!--   <div class="view-animate-container">-->
+    <!--   <div class="view-animate-container">-->
     <div class="page {{pageClass}} repeated-item" ng-view></div>
-    
-<!--  </    div>-->
+      
+    <!--  </    div>-->
     <script>
         function getLocation() {
             if (navigator.geolocation) {
@@ -96,23 +102,6 @@
                 break;
             }
 
-        }
-
-        function showError(error) {
-            switch (error.code) {
-            case error.PERMISSION_DENIED:
-                x.innerHTML = "User denied the request for Geolocation."
-                break;
-            case error.POSITION_UNAVAILABLE:
-                x.innerHTML = "Location information is unavailable."
-                break;
-            case error.TIMEOUT:
-                x.innerHTML = "The request to get user location timed out."
-                break;
-            case error.UNKNOWN_ERROR:
-                x.innerHTML = "An unknown error occurred."
-                break;
-            }
         }
     </script>
 </body>

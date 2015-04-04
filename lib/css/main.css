@@ -1,5 +1,7 @@
+/*
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Oswald:300);
+*/
  body {
     font-family: 'Open Sans';
     background: #F2F2F2;
@@ -8,87 +10,129 @@
     -webkit-font-smoothing: antialiased;
 }
 /*############################################################################33*/
-.mrt3{
+
+.grid {
+    border: solid 1px #ccc padding: 10px 10px 0 0;
+}
+.grid li {
+    width: 110px;
+    height: 110px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    background: #888;
+    color: #222;
+    -webkit-border-top-right-radius: 1.2em;
+    -moz-border-radius-topright: 1.2em;
+    border-top-right-radius: 1.2em;
+}
+/**** Transitions ****/
+
+.masonry,
+.masonry li {
+    /* apply before masonry add class */
+    position: absolute;
+    /* important to add it before enter animation start */
+    -webkit-transition-duration: .7s;
+    transition-duration: .7s;
+    -webkit-transition-property: all;
+    transition-property: all;
+}
+.masonry .masonry-enter {
+    /* limit animated properties for entering elements */
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+}
+.masonry-enter,
+.masonry-leave.masonry-leave-active {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+}
+.masonry-leave,
+.masonry-enter.masonry-enter-active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.mrt3 {
     margin-top: 3px;
 }
-.qrimage{
+.qrimage {
     position: absolute;
-
     right: 20px;
     height: 140px;
     width: 146px;
     -webkit-transition: all 5s;
     opacity: 0;
 }
-.qrcodeimg{
+.qrcodeimg {
     position: absolute;
-
     right: 20px;
     height: 140px;
     width: 146px;
 }
-.nodisplay{
+.nodisplay {
     display: none;
 }
-.mrt17{
+.mrt17 {
     margin-top: 17px;
 }
-.mrl3{
+.mrl3 {
     margin-left: 3px;
 }
-.mrl70{
+.mrl70 {
     margin-left: 70px !important;
 }
-.mrl35{
+.mrl35 {
     margin-left: 35px !important;
 }
-.greendiv{
+.greendiv {
     background-color: green;
 }
-.reddiv{
+.reddiv {
     background-color: red;
 }
-.sponsorbanner{
-    
-border: 3px solid #D6D6D6;
-padding: 10px;
+.sponsorbanner {
+    border: 3px solid #D6D6D6;
+    padding: 10px;
     height: 100px;
-width: 84px;
-margin-left: 10px;
+    width: 84px;
+    margin-left: 10px;
 }
-.sponsortop{
-border: 3px solid #D6D6D6;
-padding: 10px;
+.sponsortop {
+    border: 3px solid #D6D6D6;
+    padding: 10px;
 }
-.mrt10{
+.mrt10 {
     margin-top: 10px;
 }
-.signup{
+.signup {
     width: 200px;
 }
-.invalidmsg{
+.invalidmsg {
     color: red;
 }
-.date1{
+.date1 {
     width: 198px !important;
 }
-.options{
+.options {
     position: absolute;
-margin-top: -11px;
-background-color: aliceblue;
-z-index: 1;
-margin-left: 0px;
+    margin-top: -11px;
+    background-color: aliceblue;
+    z-index: 1;
+    margin-left: 0px;
     font-size: 15px;
     padding: 15px;
-    
-border: 17px;
-border-bottom-color: black;
+    border: 17px;
+    border-bottom-color: black;
 }
-.options a{
+.options a {
     cursor: pointer;
 }
-.editemail{
-   position: absolute;
+.editemail {
+    position: absolute;
     background-color: #8E9AA7;
     margin-left: 331px;
     margin-top: -100px;
@@ -96,54 +140,55 @@ border-bottom-color: black;
     width: 330px;
     z-index: 1;
 }
-.mr4{
+.mr4 {
     margin-top: 2px;
 }
-.pincode{
+.pincode {
     width: 10%;
 }
-.col3modify{
+.col3modify {
     width: 20%;
 }
-.ng-invalid.ng-dirty { border: 1px solid red; }
-.drop-box {
-width: 676px;
-height: 60px;
-color: black;
-background: rgb(228, 241, 255);
-padding: 10px;
-    border: 2px dashed #DDD;
-text-align: center;
+.ng-invalid.ng-dirty {
+    border: 1px solid red;
 }
-.filldetails{
+.drop-box {
+    width: 676px;
+    height: 60px;
+    color: black;
+    background: rgb(228, 241, 255);
+    padding: 10px;
+    border: 2px dashed #DDD;
+    text-align: center;
+}
+.filldetails {
     margin-top: 5%;
     position: absolute;
     margin-left: 400px;
 }
 .details {
-margin-top: 5%;
-position: absolute;
-width: 63%;
-height: 167px;
-margin-left: 5%;
-background-color: rgba(158, 157, 163, 0.61);
-color: white;
-font-weight: 600;
-font-size: 29px;
+    margin-top: 5%;
+    position: absolute;
+    width: 63%;
+    height: 167px;
+    margin-left: 5%;
+    background-color: rgba(158, 157, 163, 0.61);
+    color: white;
+    font-weight: 600;
+    font-size: 29px;
 }
-.uploaded{
+.uploaded {
     color: green;
     font-size: 16px;
 }
-#emails{
+#emails {
     display: none;
 }
-
 #map_canvas {
     width: 980px;
     height: 400px;
     background-color: #CCC;
-  }
+}
 table {
     border-collapse: collapse;
 }
@@ -164,7 +209,6 @@ table {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#6666cc), to(#4b4b95));
     border-image: initial;
 }
-
 .dropbox {
     width: 15em;
     height: 3em;
@@ -208,6 +252,7 @@ table {
     width: 150px !important;
 }
 /*################################################popover###############################################*/
+
 .pop {
     color: black;
 }
@@ -442,6 +487,7 @@ input {
     margin: 5px 10px 0 0;
     vertical-align: middle;
     border: 1px solid #ccc;
+    color: black;
 }
 input[type="checkbox"] {
     width: 15px;
@@ -738,9 +784,6 @@ a:focus {
     color: #eee !important;
     margin: 2px 10px;
 }
-
-
-
 .at-view-slide-out-left {
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
@@ -759,7 +802,6 @@ a:focus {
     z-index: 3;
     position: absolute;
 }
-
 .at-view-slide-out-left-active {
     -webkit-transform: translate(-100%, 0px);
     -moz-transform: translate(-100%, 0px);
@@ -769,7 +811,6 @@ a:focus {
     opacity: 0;
     position: absolute;
 }
-
 .at-view-slide-in-left {
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
@@ -788,7 +829,6 @@ a:focus {
     z-index: 1;
     position: absolute;
 }
-
 .at-view-slide-in-left-active {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
@@ -799,7 +839,7 @@ a:focus {
     position: absolute;
 }
 .slide-animation-setup {
-/*
+    /*
     -webkit-transition: .5s linear all;
     -moz-transition: .5s linear all;
     -o-transition: .5s linear all;
@@ -808,94 +848,71 @@ a:focus {
     left: 100%;
     opacity: 0;
 */
-/*    -webkit-tansition:*/
-    
+    /*    -webkit-tansition:*/
 }
 .slide-animation-setup .slide-animation-start {
     left: 0;
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
 .slide-animate-container {
-  position:relative;
-  height:100px!important;
-  background:white;
-  border:1px solid black;
-  height:40px;
-  overflow:hidden;
+    position: relative;
+    height: 100px!important;
+    background: white;
+    border: 1px solid black;
+    height: 40px;
+    overflow: hidden;
 }
-
 .slide-animate {
-/*  padding:10px;*/
+    /*  padding:10px;*/
 }
-
-.slide-animate.ng-enter, .slide-animate.ng-leave {
-  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-
-  display:block;
-  width:100%;
-/*  border-left:1px solid black;*/
-
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-/*  padding:10px;*/
+.slide-animate.ng-enter,
+.slide-animate.ng-leave {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    display: block;
+    width: 100%;
+    /*  border-left:1px solid black;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*  padding:10px;*/
 }
-
 .slide-animate.ng-enter {
-  left:100%;
+    left: 100%;
 }
 .slide-animate.ng-enter.ng-enter-active {
-  left:0;
+    left: 0;
 }
 .slide-animate.ng-leave.ng-leave-active {
-  left:-100%;
+    left: -100%;
 }
-
-.slidediv-animate.ng-addclass{
-    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-
-  display:block;
-  width:100%;
-/*  border-left:1px solid black;*/
-
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-/*  padding:10px;*/
+.slidediv-animate.ng-addclass {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    display: block;
+    width: 100%;
+    /*  border-left:1px solid black;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*  padding:10px;*/
 }
-
-
-
-
 .animate-hide {
- -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
-    -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
-    -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
-    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
-  line-height:20px;
-  opacity:1;
-  border:1px solid black;
-  background:white;
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    -moz-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    -o-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s;
+    line-height: 20px;
+    opacity: 1;
+    border: 1px solid black;
+    background: white;
 }
-
 .animate-hide.ng-hide {
-  line-height:0;
-  opacity:0;
-  padding:0 10px;
+    line-height: 0;
+    opacity: 0;
+    padding: 0 10px;
 }

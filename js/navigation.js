@@ -14,9 +14,9 @@ var navigationservice = angular.module('navigationservice', [])
             onsession: "1",
             subnav: []
     }, {
-            name: "My Events",
+            name: "Listing",
             classis: "",
-            link: "#/myevents",
+            link: "#/listing",
             onsession: "0",
             subnav: []
     }, /*{
@@ -40,9 +40,9 @@ var navigationservice = angular.module('navigationservice', [])
             subnav: []
      },
         {
-            name: "My Contacts",
+            name: "Contact Us",
             classis: "",
-            link: "#/mycontacts",
+            link: "#/contactus",
             onsession: "0",
             subnav: []
     }];
